@@ -11,12 +11,12 @@ cd docs/.vuepress/dist
 
 # deploy to github
 echo 'b.dbdgs.cn' > CNAME
-if [ -z "$GITHUB_TOKEN" ]; then
+if [ -z "$TOKEN_GITHUB" ]; then
   msg='deploy'
   githubUrl=git@github.com:dbdgs/dbdgs.github.io
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://dbdgs:${GITHUB_TOKEN}@github.com/dbdgs/dbdgs.github.io
+  githubUrl=https://dbdgs:${TOKEN_GITHUB}@github.com/dbdgs/dbdgs.github.io
   git config --global user.name "DaBai"
   git config --global user.email "legege007@yeah.net"
 fi
