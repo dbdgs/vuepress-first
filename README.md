@@ -1,4 +1,4 @@
 # dbdgs.github.io
 dbdgs - github pages
 
-部署在<https://dbdgs.cn>.
+部署在<https://dbdgs.cn/vuepress-first/>.
